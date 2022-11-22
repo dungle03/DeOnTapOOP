@@ -143,7 +143,7 @@ int main()
 
     if (ok)
     {
-        cout << "DS xe tai co trong luong lon nhat ma co tai trong k qua 5 tan: " << endl;
+        cout << "\nDS xe tai co trong luong lon nhat ma co tai trong k qua 5 tan: " << endl;
 
         for (int i = 0; i < m; i++)
         {
@@ -157,6 +157,55 @@ int main()
     {
         cout << "Khong co xe tai nao !" << endl;
     }
+
+    // Nhap bien so xe, in thong tin xe co bien so do
+
+    int x;
+    cout << "\nNhap bien so xe can tim: ";
+    cin >> x;
+
+    int check1 = 0, check2 = 0, vt1 = 0, vt2 = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i].get_bienso() == x)
+        {
+            check1 = 1;
+            vt1 = i;
+            break;
+        }
+        
+    }
+
+    for (int i = 0; i < m; i++)
+    {
+        if (b[i].get_bienso() == x)
+        {
+            check2 = 1;
+            vt2 = i;
+            break;
+        }
+        
+    }
+
+    if (check1)
+    {
+        cout << "\nThong tin Xe bus co bien so xe " << x << ":" << endl;
+        a[vt1].Xuat();
+    }
+    else if (check2)
+    {
+        cout << "\nThong tin Xe Tai co bien so xe " << x << ":" << endl;
+        b[vt2].Xuat();
+    }
+    else
+    {
+        cout << "\nKhong tim thay xe co bien so " << x << endl;
+    }
+    
+    
+    
+    
 
     return 0;
 }

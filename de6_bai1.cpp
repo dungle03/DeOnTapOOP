@@ -10,14 +10,14 @@ private:
 public:
     DaThuc()
     {
-        n = 1;
-        a = new double[1];
+        n = 0;
+        a = NULL;
     }
-    DaThuc(int new_n)
-    {
-        n = new_n;
-        a = new double[new_n + 1];
-    }
+    // DaThuc(int new_n)
+    // {
+    //     n = new_n;
+    //     a = new double[new_n + 1];
+    // }
     ~DaThuc()
     {
         delete[] a;
@@ -74,6 +74,6 @@ int main()
     // cout << gia_tri_bieuthuc(d1, A) << endl;
     // cout << gia_tri_bieuthuc(d2, A) << endl;
 
-    double S = sqrt(gia_tri_bieuthuc(d1, A) + gia_tri_bieuthuc(d2, A));
+    double S = (gia_tri_bieuthuc(d1, A) + gia_tri_bieuthuc(d2, A));
     cout << "Gia tri bieu thuc S = " << S << endl;
 }
