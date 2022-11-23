@@ -1,5 +1,4 @@
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
 using namespace std;
 class Dayso
 {
@@ -11,13 +10,7 @@ public:
     Dayso()
     {
         n = 0;
-        a = new int[0];
-    }
-
-    Dayso(int new_n)
-    {
-        n = new_n;
-        a = new int[new_n + 1];
+        a = NULL;
     }
 
     ~Dayso()

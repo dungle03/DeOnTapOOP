@@ -1,5 +1,4 @@
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
 using namespace std;
 class DaThuc
 {
@@ -13,11 +12,7 @@ public:
         n = 0;
         a = NULL;
     }
-    // DaThuc(int new_n)
-    // {
-    //     n = new_n;
-    //     a = new double[new_n + 1];
-    // }
+
     ~DaThuc()
     {
         delete[] a;
@@ -70,9 +65,6 @@ int main()
     double d1, d2;
     cout << "Nhap d1 va d2:  ";
     cin >> d1 >> d2;
-
-    // cout << gia_tri_bieuthuc(d1, A) << endl;
-    // cout << gia_tri_bieuthuc(d2, A) << endl;
 
     double S = (gia_tri_bieuthuc(d1, A) + gia_tri_bieuthuc(d2, A));
     cout << "Gia tri bieu thuc S = " << S << endl;

@@ -82,8 +82,6 @@ public:
 
     void Xuat()
     {
-        // cout << "MSV: " << MSV << endl;
-        // cout << "Ho va ten: " << tensv << endl;
         cout << setw(15) << left << MSV << setw(20) << left << tensv;
     }
 

@@ -123,7 +123,6 @@ int main()
             Max = tien[i];
         }
     }
-
     cout << "\nNhan vien co luong cao nhat la: " << endl;
     cout << setw(20) << left << "Ho ten" << setw(10) << left << "Luong" << endl;
 

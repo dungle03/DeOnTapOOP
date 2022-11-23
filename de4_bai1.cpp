@@ -1,5 +1,4 @@
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
 using namespace std;
 class DaThuc
 {
@@ -10,18 +9,15 @@ private:
 public:
     DaThuc()
     {
-        n = 1;
-        a = new double[1];
+        n = 0;
+        a = NULL;
     }
-    DaThuc(int new_n)
-    {
-        n = new_n;
-        a = new double[new_n + 1];
-    }
+
     ~DaThuc()
     {
         delete[] a;
     }
+
     friend istream &operator>>(istream &input, DaThuc &p)
     {
         cout << "Nhap bac da thuc : ";
@@ -35,6 +31,7 @@ public:
         }
         return input;
     }
+
     friend ostream &operator<<(ostream &output, DaThuc &p)
     {
         cout << "Da thuc vua nhap la: ";

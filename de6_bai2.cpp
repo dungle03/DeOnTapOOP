@@ -1,7 +1,4 @@
-#include <iostream>
-#include <math.h>
-#include <string>
-#include <iomanip>
+#include <bits/stdc++.h>
 using namespace std;
 
 class MatHang
@@ -11,16 +8,11 @@ private:
     int don_gia;
 
 public:
-    // MatHang()
-    // {
-    //     ma_hang = "";
-    //     don_gia = 0;
-    // }
-    // MatHang(string n_ma_hang, int n_don_gia)
-    // {
-    //     ma_hang = n_ma_hang;
-    //     don_gia = n_don_gia;
-    // }
+    MatHang()
+    {
+        ma_hang = "";
+        don_gia = 0;
+    }
 
     string get_mahang()
     {
@@ -55,18 +47,11 @@ private:
     string ngay_ban;
 
 public:
-    // HoaDon()
-    // {
-    //     mat_hang = "";
-    //     so_luong = 0;
-    //     ngay_ban = "";
-    // }
-    // HoaDon(string mh, int sl, string ngayban)
-    // {
-    //     mat_hang = mh;
-    //     so_luong = sl;
-    //     ngay_ban = ngayban;
-    // }
+    HoaDon()
+    {
+        ma_hang = ngay_ban = "";
+        so_luong = 0;
+    }
 
     void Nhap()
     {
@@ -138,9 +123,7 @@ int main()
     //
     string ss;
     cout << "Nhap ngay can tinh tien: ";
-    //cin.ignore();
     getline(cin, ss);
-    //cout << ss;
 
     float tongt = 0;
     for (int i = 0; i < n; i++)
@@ -157,7 +140,6 @@ int main()
             }
             
         }
-        
     }
     cout << "Tong tien ngay can tinh = " << tongt << endl;
 

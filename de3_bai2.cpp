@@ -1,6 +1,4 @@
-#include <iostream>
-#include <math.h>
-#include <iomanip>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -80,8 +78,6 @@ public:
     void Xuat()
     {
         Xe ::Xuat();
-        // cout << setw(10) << left << taitrong << endl;
-
         cout << "Tai trong Xe: " << taitrong << endl;
     }
 };
@@ -123,16 +119,15 @@ int main()
     // In ds cac Xe Tai co trong luong max ma co tai trong <= 5 tan
 
     double Max = 0;
-    int ok = 0;
     for (int i = 0; i < m; i++)
     {
         if (b[i].get_trongluong() > Max)
         {
             Max = b[i].get_trongluong();
-            // ok = 1;
         }
     }
 
+    int ok = 0;
     for (int i = 0; i < m; i++)
     {
         if (b[i].get_trongluong() == Max && b[i].get_taitrong() <= 5)
